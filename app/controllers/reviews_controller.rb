@@ -25,7 +25,6 @@ class ReviewsController < ApplicationController
 	end
 
 	def review_params
-		binding.pry
 		params.require(:review).permit(:text, :rating_out_of_ten)
 	end
 end
